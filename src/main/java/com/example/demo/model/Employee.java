@@ -21,11 +21,17 @@ public class Employee {
     private int id;
 
     /**
-     * The role of the employee.
+     * The role
      */
     @Column(nullable = false)
-    private String role;
-
+    private String role = "EMPLOYEE";
+    
+    /**
+     * The professional figure that the employee represents
+     */
+    @Column(nullable = false)
+    private String professionalFigure;
+    
     /**
      * The first name of the employee.
      */
@@ -89,6 +95,14 @@ public class Employee {
 
 	public void setRole(String role) {
 		this.role = role;
+	}
+	
+	public String getProfessionalFigure() {
+		return professionalFigure;
+	}
+
+	public void setProfessionalFigure(String professionalFigure) {
+		this.professionalFigure = professionalFigure;
 	}
 
 	public String getFirstName() {

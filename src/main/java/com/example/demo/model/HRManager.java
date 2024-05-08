@@ -19,6 +19,12 @@ public class HRManager {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    
+    /**
+     * The role
+     */
+    @Column(nullable = false)
+    private String role = "HR_MANAGER";
 
     /**
      * The first name of the HR manager.
@@ -51,6 +57,14 @@ public class HRManager {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 	public String getFirstName() {
