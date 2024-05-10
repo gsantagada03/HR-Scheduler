@@ -30,6 +30,7 @@ public class AdminService {
 		}
 	}
 	
+	
 	public boolean adminFirstLogin(Admin newAdminCredentials) throws UsernameNotFoundException{
 		Optional<Admin> adminOptional = adminRepository.findByUsername("admin");
 		Admin admin = adminOptional.get();
