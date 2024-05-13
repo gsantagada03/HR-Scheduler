@@ -15,31 +15,35 @@ body{
 	margin-top: 13%
 }
 
-#LoginTitle{
+#LoginTitle {
 	margin-left: 47px;
 }
 
-
-
-#inputUsername{
+#inputUsername {
 	border-radius: 50px;
-	width:300px;
-
+	width: 300px;
 }
 
-#inputPassword{
+#inputPassword {
 	border-radius: 50px;
-	width:300px;
-
+	width: 300px;
 }
 
-#SubmitLoginButton{
+#SubmitLoginButton {
 	border-radius: 50px;
-	width:300px;
+	width: 300px;
 }
 
-#LoginTitle{
-	margin-left:95px;
+#LoginTitle {
+	margin-left: 95px;
 	margin-bottom: 30px;
-	color:black;
+	color: black;
 }
+
+.password-toggle-icon {
+	position: absolute;
+	right: 0.5rem;
+	top: 25%;
+	cursor : pointer;
+}
+
