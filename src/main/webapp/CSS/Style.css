@@ -1,0 +1,71 @@
+body {
+	background-image: url("/images/immagine-login.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#loginTitle {
+	text-align: center;
+}
+
+#ResetPasswordTitle {
+	text-align: center;
+}
+
+#username {
+	border: none;
+	border-bottom: 2px solid grey;
+	box-shadow: none;
+}
+
+#password {
+	border: none;
+	border-bottom: 2px solid grey;
+	box-shadow: none;
+}
+
+#confirmPassword{
+	border: none;
+	border-bottom: 2px solid grey;
+	box-shadow: none;
+}
+
+#showPassword{
+	cursor : pointer;
+}
+
+#showConfirmedPassword{
+	cursor : pointer;
+}
+
+#submitLogin {
+	width: 200px;
+	margin-top : 16px;
+}
+
+#divPassword {
+	margin-top: 50px;
+}
+
+
+#loginUsername {
+	margin-top: 40px;
+}
+
+#username-icon {
+	margin-top: 7px;
+}
+
+#password-icon {
+	margin-top: 7px;
+}
+
+#username-blur-error,
+#password-blur-error,
+#error-message {
+    color: red;
+    margin-top: 5px;
+}
+
