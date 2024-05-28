@@ -1,49 +1,71 @@
-@charset "ISO-8859-1";
-
-body{
-	background: url(/images/immagine-login.png);
+body {
+	background-image: url("/images/immagine-login.png");
 	background-size: cover;
-	background-repeat: no repeat;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 }
 
-.centered-form-container{
-	display : flex;
-	justify-content:center;
-	align-items:center;
-	margin-top: 13%
+#loginTitle {
+	text-align: center;
 }
 
-#LoginTitle {
-	margin-left: 47px;
+#ResetPasswordTitle {
+	text-align: center;
 }
 
-#inputUsername {
-	border-radius: 50px;
-	width: 300px;
+#username {
+	border: none;
+	border-bottom: 2px solid grey;
+	box-shadow: none;
 }
 
-#inputPassword {
-	border-radius: 50px;
-	width: 300px;
+#password {
+	border: none;
+	border-bottom: 2px solid grey;
+	box-shadow: none;
 }
 
-#SubmitLoginButton {
-	border-radius: 50px;
-	width: 300px;
+#confirmPassword{
+	border: none;
+	border-bottom: 2px solid grey;
+	box-shadow: none;
 }
 
-#LoginTitle {
-	margin-left: 95px;
-	margin-bottom: 30px;
-	color: black;
-}
-
-.password-toggle-icon {
-	position: absolute;
-	right: 0.5rem;
-	top: 25%;
+#showPassword{
 	cursor : pointer;
+}
+
+#showConfirmedPassword{
+	cursor : pointer;
+}
+
+#submitLogin {
+	width: 200px;
+	margin-top : 16px;
+}
+
+#divPassword {
+	margin-top: 50px;
+}
+
+
+#loginUsername {
+	margin-top: 40px;
+}
+
+#username-icon {
+	margin-top: 7px;
+}
+
+#password-icon {
+	margin-top: 7px;
+}
+
+#username-blur-error,
+#password-blur-error,
+#error-message {
+    color: red;
+    margin-top: 5px;
 }
 
