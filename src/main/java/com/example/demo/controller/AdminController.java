@@ -31,7 +31,7 @@ public class AdminController {
 	@GetMapping("/login")
 	public String login(@RequestParam(value = "error", required = false) String error, Model model) {
 		if (error != null) {
-			model.addAttribute("errorMessage", "Invalid username or password.");
+			model.addAttribute("errorMessage", "Username o password non validi");
 		}
 		return "Login";
 	}
@@ -59,7 +59,7 @@ public class AdminController {
 	@PostMapping("/changePassword")
 	public String changePassword(Admin adminNewPassword, String confirmPassword, Model model) {
 		if (adminService.changeAdminPasswordFirstLogin(adminNewPassword, confirmPassword)) {
-			model.addAttribute("successMessage", "Password changed successfully");
+			model.addAttribute("successMessage", "Password modificata con successo");
 			return "redirect:/admin/homePage";
 		} else {
 			return "redirect:/admin/resetPassword";

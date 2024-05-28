@@ -50,11 +50,11 @@ public class AdminService {
             if (admin.getPassword().matches(passwordRegex)) {
                 return true;
             } else {
-                System.out.println("The password does not meet the regex requirements.");
+                System.out.println("La password non rispetta i requisiti della regex");
                 return false;
             }
         } else {
-            System.out.println("The password is not present.");
+            System.out.println("La password non è presente.");
             return false;
         }
     }
@@ -75,12 +75,12 @@ public class AdminService {
             if (verifyPassword(adminNewPassword) && adminNewPassword.getPassword().equals(confirmPassword)) {
                 String encodedPassword = passwordEncoder.encode(adminNewPassword.getPassword());
                 adminObj.setPassword(encodedPassword);
-                System.out.println("Password changed successfully.");
+                System.out.println("Password modificata con successo");
                 adminObj.setFirstLogin(false);
                 adminRepository.save(adminObj);
                 return true;
             } else {
-                System.out.println("Error while changing the password.");
+                System.out.println("Errore durante la modifica della password");
                 return false;
             }
         } else {
