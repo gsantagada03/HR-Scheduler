@@ -6,6 +6,15 @@ body {
 	background-position: center;
 }
 
+.home-page-body{
+	background-image: url("/images/homepage-image.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
 #loginTitle {
 	text-align: center;
 }
@@ -69,3 +78,20 @@ body {
     margin-top: 5px;
 }
 
+.nav-link{
+	color :  white!important;
+}
+
+#logout-button{
+	background-color: #0a2240;
+	color: white;
+	border:none;
+}
+
+#description-homepage{
+	 margin: auto;
+     text-align: center; 
+     margin-top : 200px;
+         font-family: 'Roboto', sans-serif;
+     
+}
