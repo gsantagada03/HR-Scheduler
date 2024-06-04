@@ -13,18 +13,18 @@ import com.example.demo.service.AdminService;
 @Component
 public class AdminAccountInitializer implements CommandLineRunner {
 
-    @Autowired
-    private AdminService adminService;
+	@Autowired
+	private AdminService adminService;
 
-    /**
-     * Ensures that an admin account is available by calling the ensureAdminAccount method of AdminService.
-     * This method is executed automatically at application startup.
-     *
-     * @param args command-line arguments passed to the application.
-     * @throws Exception if an error occurs during the initialization.
-     */
-    @Override
-    public void run(String... args) throws Exception {
-        adminService.ensureAdminAccount();
-    }
+	/**
+	 * Ensures that an admin account is available by calling the ensureAdminAccount method of AdminService.
+	 * This method is executed automatically at application startup.
+	 *
+	 * @param args command-line arguments passed to the application.
+	 * @throws Exception if an error occurs during the initialization.
+	 */
+	@Override
+	public void run(String... args) throws Exception {
+		adminService.ensureAdminAccount();
+	}
 }
