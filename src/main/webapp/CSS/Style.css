@@ -95,3 +95,11 @@ body {
          font-family: 'Roboto', sans-serif;
      
 }
+
+.dropdown-item{
+	color : grey;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: skyblue !important; /* Cambia il colore desiderato */
+}
