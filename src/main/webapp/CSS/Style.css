@@ -6,14 +6,13 @@ body {
 	background-position: center;
 }
 
-.home-page-body{
+.home-page-body {
 	background-image: url("/images/homepage-image.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 }
-
 
 #loginTitle {
 	text-align: center;
@@ -35,29 +34,28 @@ body {
 	box-shadow: none;
 }
 
-#confirmPassword{
+#confirmPassword {
 	border: none;
 	border-bottom: 2px solid grey;
 	box-shadow: none;
 }
 
-#showPassword{
-	cursor : pointer;
+#showPassword {
+	cursor: pointer;
 }
 
-#showConfirmedPassword{
-	cursor : pointer;
+#showConfirmedPassword {
+	cursor: pointer;
 }
 
 #submitLogin {
 	width: 200px;
-	margin-top : 16px;
+	margin-top: 16px;
 }
 
 #divPassword {
 	margin-top: 50px;
 }
-
 
 #loginUsername {
 	margin-top: 40px;
@@ -71,35 +69,32 @@ body {
 	margin-top: 7px;
 }
 
-#username-blur-error,
-#password-blur-error,
-#error-message {
-    color: red;
-    margin-top: 5px;
+#username-blur-error, #password-blur-error, #error-message {
+	color: red;
+	margin-top: 5px;
 }
 
-.nav-link{
-	color :  white!important;
+.nav-link {
+	color: white !important;
 }
 
-#logout-button{
+#logout-button {
 	background-color: #0a2240;
 	color: white;
-	border:none;
+	border: none;
 }
 
-#description-homepage{
-	 margin: auto;
-     text-align: center; 
-     margin-top : 200px;
-         font-family: 'Roboto', sans-serif;
-     
+#description-homepage {
+	margin: auto;
+	text-align: center;
+	margin-top: 200px;
+	font-family: 'Roboto', sans-serif;
 }
 
-.dropdown-item{
-	color : grey;
+.dropdown-item {
+	color: grey;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: skyblue !important; /* Cambia il colore desiderato */
+	color: skyblue !important;
 }

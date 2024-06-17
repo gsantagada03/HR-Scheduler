@@ -48,9 +48,16 @@ public class SecurityConfiguration {
                 })
                 .formLogin(httpSecurityFormLoginConfigurer -> {
                     httpSecurityFormLoginConfigurer.loginPage("/login").permitAll()
-                    .successHandler(customLoginSuccessHandler)
-                    .failureUrl("/login?error=true")
-                    .permitAll();
+                            .successHandler(customLoginSuccessHandler)
+                            .failureUrl("/login?error=true")
+                            .permitAll();
+                })
+                .logout(httpSecurityLogoutConfigurer ->{
+                	httpSecurityLogoutConfigurer.logoutUrl("/logout")
+                	.logoutSuccessUrl("/login")
+                	.invalidateHttpSession(true)
+                	.deleteCookies("JSESSIONID")
+                	.permitAll();
                 })
                 .build();
     }

@@ -76,5 +76,15 @@ public class AdminController {
 	public String adminHomePage() {
 		return "AdminHomePage";
 	}
+	
+	@PostMapping("/adminLogout")
+	public String adminLogout() {
+		return "redirect:/login";
+	}
+	
+	@GetMapping("/admin/registerHRManager")
+	public String registerHRManager() {
+		return "CreateHRManager";
+	}
 }
 
